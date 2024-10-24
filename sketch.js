@@ -11,11 +11,11 @@ function draw() {
   fill("#b41e05");
   
   // dimensioni del rettangolo prese dall'immagine originale
-  let rectWidth = 8;
-  let rectHeight = 50;
+  let rectWidth = 4; // Dimensione rimpicciolita
+  let rectHeight = 25; // Dimensione rimpicciolita
   let numRows = 27; // numero di righe da quello che è l'immagine
   let numCols = 27; // numero di colonne da quello che è l'immagine
-  let spacing = 58; // aggiunta della spaziatura che è la somma delle due dimensioni del rettangolo
+  let spacing = 29; // Spaziatura rimpicciolita
   
   // mi serve calcolare la posizione iniziale per centrare il quadrato
   let startX = (width - (numCols - 1) * spacing - rectWidth) / 2;
@@ -42,21 +42,21 @@ function draw() {
       let adjustedHeight = rectHeight;
       let rectangleColor = "#b41e05"; // Colore di default
 
-      // Aumenta l'altezza di 40 per i rettangoli nella metà destra
+      // Aumenta l'altezza di 20 per i rettangoli nella metà destra
       if (x >= width / 2) {
-        adjustedHeight = 90;
+        adjustedHeight = 45; // Altezza rimpicciolita
         rectangleColor = "#8e2210";
       }
 
-      // Aumenta ulteriormente l'altezza di 80 e cambia il colore per i rettangoli in basso a destra
+      // Aumenta ulteriormente l'altezza di 40 e cambia il colore per i rettangoli in basso a destra
       if (x >= width / 2 && y >= height / 2) {
-        adjustedHeight = 130;
+        adjustedHeight = 65; // Altezza rimpicciolita
         rectangleColor = "#6b110d";
       }
 
-      // Nuovo: Aumenta l'altezza di 120 e cambia il colore per i rettangoli in basso a sinistra
+      // Nuovo: Aumenta l'altezza di 60 e cambia il colore per i rettangoli in basso a sinistra
       if (x < width / 2 && y >= height / 2) {
-        adjustedHeight = 170;
+        adjustedHeight = 85; // Altezza rimpicciolita
         rectangleColor = "#4c2115"; // Colore dell'immagine originale
       }
 
