@@ -13,8 +13,8 @@ function draw() {
   // dimensioni del rettangolo prese dall'immagine originale
   let rectWidth = 8;
   let rectHeight = 50;
-  let numRows = 27; // numero di righe da quello è l'immagine
-  let numCols = 27; // numero di colonne da quello è l'immagine
+  let numRows = 27; // numero di righe da quello che è l'immagine
+  let numCols = 27; // numero di colonne da quello che è l'immagine
   let spacing = 58; // aggiunta della spaziatura che è la somma delle due dimensioni del rettangolo
   
   // mi serve calcolare la posizione iniziale per centrare il quadrato
